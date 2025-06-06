@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa
+    ports:
+      - "8080:80"  # Mapeando a porta 8080 do host para a porta 80 do contêiner
+    environment:
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=dvwa
+      - MYSQL_HOST=mysql  # Aqui, "mysql" é o nome do serviço do contêiner MySQL
+    depends_on:
+      - mysql  # Garante que o contêiner mysql seja iniciado antes do dvwa
+    restart: always
+    volumes:
+      - ./data:/var/lib/mysql  # Persistência dos dados do MySQL
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root  # Senha do root para o MySQL
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=dvwa  # Nome do banco de dados para ser criado
+    volumes:
+      - ./mysql_data:/var/lib/mysql  # Persistência dos dados do MySQL
+    restart: always
+
+volumes:
+  mysql_data:  # Define o volume para armazenar dados do MySQL
+
