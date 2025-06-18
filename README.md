@@ -79,7 +79,7 @@ $_DVWA['db_database'] = 'dvwa';
 $_DVWA['default_security_level'] = 'low';
 ?>
 EOF
----
+```
 
 # 🔐 Login no Cloudflare via Cloudflared
 
