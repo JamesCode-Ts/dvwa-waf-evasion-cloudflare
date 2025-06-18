@@ -80,6 +80,7 @@ $_DVWA['default_security_level'] = 'low';
 ?>
 EOF
 ```
+![Image](https://github.com/user-attachments/assets/a316273c-ef83-41a0-be5d-417e9180c9ea)
 
 # 🔐 Login no Cloudflare via Cloudflared
 
@@ -156,6 +157,8 @@ Adicione um **CNAME** com as seguintes informações:
 ⚠️ **Importante:** Substitua o conteúdo pelo hostname real gerado no seu Tunnel.
 
 ---
+
+![Image](https://github.com/user-attachments/assets/e0068814-a235-40d2-9739-05d90105c965)
 
 # ✅ Teste de acesso
 
