@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Objetivo
+### 🎯 Objetivo
 
 Criar um ambiente controlado com o **DVWA (Damn Vulnerable Web Application)** exposto através da **Cloudflare**, com o WAF (Web Application Firewall) ativado, permitindo testar **técnicas de evasão e bypass de WAF**.
 
@@ -13,7 +13,7 @@ Criar um ambiente controlado com o **DVWA (Damn Vulnerable Web Application)** ex
 
 ---
 
-## 📋 Requisitos
+### 📋 Requisitos
 
 - Uma máquina Linux (exemplo: Kali Linux)
 - Docker + Docker Compose
@@ -23,7 +23,7 @@ Criar um ambiente controlado com o **DVWA (Damn Vulnerable Web Application)** ex
 
 ---
 
-## 🐳 Instalação do Docker e Docker Compose
+### 🐳 Instalação do Docker e Docker Compose
 
 ```bash
 sudo apt update
@@ -36,9 +36,9 @@ newgrp docker
 
 ---
 
-## 🧱 Subindo o DVWA com Docker Compose
+### 🧱 Subindo o DVWA com Docker Compose
 
-## 📦 Instalação e Inicialização do DVWA
+### 📦 Instalação e Inicialização do DVWA
 
 ```bash
 cd ~/Downloads
@@ -47,7 +47,7 @@ cd dvwa-waf-evasion-cloudflare-main
 docker-compose up -d
 docker ps
 ```
-## 💡 Configuração do arquivo `config.inc.php` para o DVWA
+### 💡 Configuração do arquivo `config.inc.php` para o DVWA
 
  Você precisa colocar o arquivo `config.inc.php` dentro da pasta `config` do seu projeto local (no host), que será mapeada automaticamente para o container DVWA.
 
@@ -82,7 +82,7 @@ EOF
 ```
 ![Image](https://github.com/user-attachments/assets/a316273c-ef83-41a0-be5d-417e9180c9ea)
 
-## 🔐 Login no Cloudflare via Cloudflared
+### 🔐 Login no Cloudflare via Cloudflared
 
 ### Autenticação no Cloudflare
 
@@ -100,9 +100,9 @@ Após o login, será gerado o seguinte arquivo:
 
 ---
 
-## 🚇 Criando e Configurando o Tunnel
+### 🚇 Criando e Configurando o Tunnel
 
-## 📌 Criar o Tunnel
+### 📌 Criar o Tunnel
 
 ```bash
 cloudflared tunnel create labdvwa-shop-tunnel
@@ -142,7 +142,7 @@ cloudflared tunnel run labdvwa-shop-tunnel
 
 ---
 
-## 🌐 Configuração do DNS na Cloudflare
+### 🌐 Configuração do DNS na Cloudflare
 
 Acesse o painel da Cloudflare.
 
@@ -159,7 +159,7 @@ Adicione um **CNAME** com as seguintes informações:
 ---
 
 
-# ✅ Teste de acesso
+### ✅ Teste de acesso
 
 No navegador:
 
@@ -187,7 +187,7 @@ Após o ambiente estar funcionando, você pode realizar os seguintes testes de e
 
 ---
 
-## ⚠️ Aviso sobre o domínio
+### ⚠️ Aviso sobre o domínio
 
 Foi comprado um domínio `.shop` por apenas **R$ 3,00**.
 
@@ -202,7 +202,7 @@ Foi comprado um domínio `.shop` por apenas **R$ 3,00**.
 
 ---
 
-## ✅ Objetivo final
+### ✅ Objetivo final
 
 Avaliar como o **WAF da Cloudflare** reage a **payloads ofensivos reais**.
 
@@ -210,7 +210,7 @@ Este lab **simula um ambiente de produção**, com um serviço protegido pela **
 
 ---
 
-## ✅ Contribuições
+### ✅ Contribuições
 
 Se quiser sugerir melhorias, enviar novos payloads de bypass ou compartilhar resultados dos seus testes:
 
@@ -219,7 +219,7 @@ Se quiser sugerir melhorias, enviar novos payloads de bypass ou compartilhar res
 
 ---
 
-## ✅ Disclaimer Legal
+### ✅ Disclaimer Legal
 
 Este projeto é **apenas para fins de estudo e pesquisa ética**.
 
