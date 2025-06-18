@@ -158,7 +158,6 @@ Adicione um **CNAME** com as seguintes informações:
 
 ---
 
-![Image](https://github.com/user-attachments/assets/e0068814-a235-40d2-9739-05d90105c965)
 
 # ✅ Teste de acesso
 
@@ -171,6 +170,8 @@ https://www.seudominio.com
 ✅ Se tudo estiver correto, o **DVWA** vai carregar, passando pelo **WAF da Cloudflare**.
 
 ---
+
+![Image](https://github.com/user-attachments/assets/e0068814-a235-40d2-9739-05d90105c965)
 
 # 🚩 Testes de Bypass (Exemplos)
 
