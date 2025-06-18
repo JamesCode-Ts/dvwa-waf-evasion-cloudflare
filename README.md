@@ -1,4 +1,14 @@
-## DVWA WAF Evasion - Laboratório de Bypass Cloudflare
+## 🛡️ Projeto: Laboratório de Bypass de WAF Cloudflare com DVWA
+Com o crescente uso de Web Application Firewalls (WAFs) por empresas ao redor do mundo, entender como essas soluções funcionam e como reagem a diferentes tipos de ataques tornou-se essencial para quem trabalha com segurança ofensiva, pentest e análise de vulnerabilidades.
+
+Pensando nisso, desenvolvi um ambiente controlado e realista onde a aplicação DVWA (Damn Vulnerable Web Application), popular no ensino de segurança web, foi dockerizada e posicionada atrás do WAF da Cloudflare, permitindo simular cenários que muitas aplicações reais enfrentam.
+
+O objetivo principal foi analisar o comportamento do WAF da Cloudflare diante de payloads ofensivos e testar diferentes formas de bypass e evasão, fundamentais em auditorias de segurança em ambientes de produção que utilizam essa proteção.
+
+👉 Todo o processo de instalação, configuração do Docker, integração com a Cloudflare e execução do ambiente está documentado em um repositório público, pronto para que outros profissionais e entusiastas da área possam baixar, estudar e realizar seus próprios testes de evasão.
+
+Essa contribuição visa ajudar a comunidade de segurança a compreender as limitações e os pontos fortes do WAF da Cloudflare, criando um ambiente seguro para pesquisa de técnicas ofensivas de forma ética e responsável.
+</br>
 
 > **Projeto desenvolvido por JamesCode (Tiago Santana Ferreira) para a comunidade de segurança ofensiva**
 
