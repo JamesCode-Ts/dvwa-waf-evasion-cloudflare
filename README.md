@@ -57,6 +57,8 @@ cd dvwa-waf-evasion-cloudflare-main
 docker-compose up -d
 docker ps
 ```
+![Image](https://github.com/user-attachments/assets/b6ca494f-468f-4a9e-8c5c-e01d53d60c45)
+
 ### 💡 Configuração do arquivo `config.inc.php` para o DVWA
 
  Você precisa colocar o arquivo `config.inc.php` dentro da pasta `config` do seu projeto local (no host), que será mapeada automaticamente para o container DVWA.
